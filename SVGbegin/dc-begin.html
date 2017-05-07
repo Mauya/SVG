@@ -50,7 +50,8 @@
            .width(500).height(200)
            .dimension(dateDim)
            .group(hits)
-           .x(d3.time.scale().domain([minDate, maxDate]));
+           .x(d3.time.scale().domain([minDate, maxDate]))
+           .yAxisLabel("Hits per day");
        dc.renderAll();
    }
 </script>
